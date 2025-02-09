@@ -3,7 +3,7 @@ import axios from "axios";
 import { io } from "socket.io-client";
 
 // Constants
-const API_URL = "http://localhost:5000";
+const API_URL = "https://swissmote-10cr.onrender.com";
 const SOCKET_CONFIG = { transports: ["polling"] };
 
 const EventDashboard = () => {
