@@ -38,7 +38,7 @@ const Login = () => {
     e.preventDefault();
     
     try {
-      const { data } = await axios.post("http://localhost:5000/api/auth/login", {
+      const { data } = await axios.post("https://swissmote-10cr.onrender.com/api/auth/login", {
         username,
         password,
       });
@@ -54,7 +54,7 @@ const Login = () => {
    */
   const handleGuestLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/guest-login");
+      const response = await axios.post("https://swissmote-10cr.onrender.com/api/auth/guest-login");
       localStorage.setItem("token", response.data.token);
       navigate("/");
     } catch (error) {
