@@ -21,7 +21,7 @@ const Register = () => {
   const onSubmit = async (data) => {
     try {
       // Send registration request to backend
-      const response = await axios.post("/api/auth/register", data);
+      const response = await axios.post("https://swissmote-10cr.onrender.com/api/auth/register", data);
       
       // Show success message and could redirect user
       alert("Registration successful!");
